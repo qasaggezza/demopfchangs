@@ -17,7 +17,7 @@ public class PFHomePage extends PFChangWrappers{
 	public PFCreateAccount clickRegister() {
 		clickByLink(prop.getProperty("Home.Register.Linktext"));
 		return new PFCreateAccount();
-	
+
 	}
 	public PFCreateAccount clicklogin() {
 		clickByClassName(prop.getProperty("Login.login.class"));
