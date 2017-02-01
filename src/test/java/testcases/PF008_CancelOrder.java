@@ -59,7 +59,7 @@ public class PF008_CancelOrder extends PFChangWrappers{
 		.ClickLocation()
 		.selectOrdertime(ordtime)
 		.clickCancelOrder();
-		System.out.println("ordercancelled");			}
+		System.out.println("order");			}
 	
 @BeforeClass
 	public void beforeClass() {
