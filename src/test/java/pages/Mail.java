@@ -1,5 +1,8 @@
 package pages;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
 import utils.Reporter;
 import wrappers.PFChangWrappers;
 /**
@@ -52,5 +55,28 @@ public class Mail extends PFChangWrappers{
 		verifyTextContainsByXpath(prop.getProperty("Mail.Content.Xpath"), data);
 		return this;
 	}
+	public Mail clickUnreadMail1() throws InterruptedException 
+	 {
+	//System.out.println(driver.getTitle());
+	java.util.List<WebElement> unreademail = driver.findElements(By.xpath("//span[@class='zF']"));
+	//String MyMailer = "";
+
+	for(int i=0;i<unreademail.size();i++)
+	{
+	   if(unreademail.get(i).isDisplayed()==true)
+	   {
+	   	unreademail.get(i).click();	 
+	   	Reporter.reportStep("The Unread Mail is clicked.", "PASS");
+	   	//Thread.sleep(5000);
+	   }
+	/*driver.findElement(By.xpath("//*[contains(@href,'https://wwwqa.peiwei.com/reset-password?email=')]")).click();
+	System.out.println(driver.getTitle());
+	clickByXpath(prop.getProperty("Gmail.Unread.Xpath"));*/
+
+	}
+	 return new Mail();
+	  
+	 }
+
 
 }

@@ -15,9 +15,10 @@ public class PFYourAccount extends PFChangWrappers{
 	}
 	
 	public PFReservation MakeReservation() {
-		clickByXpath(prop.getProperty("Youraccount.makereservation.XPath"));
+		clickByXpath(prop.getProperty("home.reservations.xpath"));
 		return new PFReservation();
 	}
+	
 	
 	public MenuAndOrder ClickMenuandOrder() {
 		clickByXpath(prop.getProperty("Youraccount.menuandorder.XPath"));
@@ -70,6 +71,7 @@ Reservation.size.name=partySize
 		return new PFHomePage();
 	}
 
+	
 
 	/*public PFCreateAccount verifyLoginmessage(String data) {
 		verifyTextByXpath(prop.getProperty("Login.message.XPath"), data);

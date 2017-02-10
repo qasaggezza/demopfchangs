@@ -24,19 +24,26 @@ public class PFHomePage extends PFChangWrappers{
 		return new PFCreateAccount();
 	}
 	
-	/*public PFHomePage enterEmailaddresshome(String data) {
-		enterById(prop.getProperty("Login.emailaddress.id"), data);
-		return this;
+	public PFReservation clickonreservationmenu() {
+		clickByXpath(prop.getProperty("home.reservations.xpath"));
+		return new PFReservation();
 	}
 
 	public PFHomePage enterPasswordhome(String data) {
 		enterById(prop.getProperty("Login.password.id"), data);
 		return this;
 	}
+	
+	public PFGiftCards clickonGiftCardsTab() {
+		clickByXpath(prop.getProperty("Home.GiftCardsTab.xpath"));
+		return new PFGiftCards();
+	}
 
 
-	public PFCreateAccount loginfailurehome() {
+	/*public PFCreateAccount loginfailurehome() {
 		clickByXpath(prop.getProperty("Login.submit.XPath"));
 		return null;
-	}	*/
+	}
+	
+	*/
 }

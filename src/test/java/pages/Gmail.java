@@ -1,5 +1,8 @@
 package pages;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
 import utils.Reporter;
 import wrappers.PFChangWrappers;
 /**
@@ -35,6 +38,8 @@ public class Gmail extends PFChangWrappers{
 				clickById(prop.getProperty("Gmail.signIn.id"));
 				return new Mail();
 			}
+		 
+
 		 
 	
 }
