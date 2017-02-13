@@ -27,10 +27,11 @@ public class PF0012_SuccessfulRegistration extends PFChangWrappers{
 		.verifyEmailid(emailaddress)
 		.clickLogout()
 		.clickNotuser();
-
+<<<<<<< HEAD:src/test/java/testcases/PF0012_SuccessfulRegistration.java
 		//system.out.println("success");
-
+=======
 		
+>>>>>>> 1ced4d48352dcd6fcc8f5b821d27f88d4fbedf04:src/test/java/testcases/PF002_SuccessfulRegistration.java
 			}
 @BeforeClass
 	public void beforeClass() {
