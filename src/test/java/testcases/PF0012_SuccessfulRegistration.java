@@ -9,7 +9,7 @@ import wrappers.PFChangWrappers;
 
 import org.testng.annotations.BeforeClass;
 
-public class PF002_SuccessfulRegistration extends PFChangWrappers{
+public class PF0012_SuccessfulRegistration extends PFChangWrappers{
 	@Test(dataProvider="fetchData")
 	public void register(String emailaddress, String passWord,String fname, String lname,String phone,String zipcode,String value, String dayvalue) throws InterruptedException {
 		new PFHomePage()
@@ -27,13 +27,13 @@ public class PF002_SuccessfulRegistration extends PFChangWrappers{
 		.verifyEmailid(emailaddress)
 		.clickLogout()
 		.clickNotuser();
-		system.out.println("success");
+		//system.out.println("success");
 			}
 @BeforeClass
 	public void beforeClass() {
-		dataSheetName="PF002";
+		dataSheetName="PF0012";
 		browserName="chrome";
-		testCaseName="PF002 Successful Registration";
+		testCaseName="PF0012 Successful Registration";
 		testDescription="User Registration using POM";
 	}
 

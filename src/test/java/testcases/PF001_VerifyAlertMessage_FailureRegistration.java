@@ -8,7 +8,7 @@ import wrappers.PFChangWrappers;
 public class PF001_VerifyAlertMessage_FailureRegistration extends PFChangWrappers{
 	
 	@Test(dataProvider="fetchData", groups ="smoke")
-	public void registerf(String emailaddress, String passWord,String fname, String lname,String phone,String zipcode,String message) {
+	public void registerf(String emailaddress, String passWord,String fname, String lname,String phone,String zipcode,String message) throws Exception {
 		new PFHomePage()
 		.clickRegister()
 		.enterEmailaddress(emailaddress)

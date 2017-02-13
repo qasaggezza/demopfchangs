@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import pages.PFHomePage;
 import wrappers.PFChangWrappers;
 
-public class SingleGiftCard  extends PFChangWrappers{
+public class PF0011_SingleGiftCard  extends PFChangWrappers{
 	@Test(dataProvider="fetchData")
 	public void login(String value, String quantity ,String addr1,String addr2 ,String msg,String fname,String lname,String phone,String address1,String address2,String city,String state,String zipcode,String method,String mail,String name,String number,String date,String gmail,String gpswd)throws  Exception{
 		
@@ -49,6 +49,7 @@ public class SingleGiftCard  extends PFChangWrappers{
 		
 		
 		
+		
 		;
 		
 		
@@ -56,7 +57,7 @@ public class SingleGiftCard  extends PFChangWrappers{
 	}
 	@BeforeClass
 	public void beforeClass(){
-		dataSheetName="PF002";
+		dataSheetName="PF0011";
 		browserName="chrome";
 		testCaseName="SingleGiftCard";
 		testDescription="dealing with giftcards as a guest user";

@@ -9,10 +9,16 @@ public class MainMenu extends PFChangWrappers{
 		//Reporter.reportStep("This is not Your Menu and Order Page", "FAIL");
 	}
 
+
 	public MainMenu clickStreetfare1(){
 		clickByXpath(prop.getProperty("MainMenu.StreetFare1.XPath"));
 		return this;
 	}
+	public MainMenu clickyouroption(){
+		clickByXpath(prop.getProperty("MainMenu.chooseyourOption.xpath"));
+		return this;
+	}
+	
 	public MainMenu clickStreetfare2(){
 		clickByXpath(prop.getProperty("MainMenu.StreetFare2.XPath"));
 		return this;
@@ -51,7 +57,7 @@ public class MainMenu extends PFChangWrappers{
 
 	public MainMenu clickKeeplooking() throws InterruptedException{
 		clickByXpath(prop.getProperty("MainMenu.Keeplooking.XPath"));
-	//	Thread.sleep(1000);
+	Thread.sleep(1000);
 		return this;
 	}
 	

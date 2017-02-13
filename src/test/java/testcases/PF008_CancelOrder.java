@@ -24,6 +24,7 @@ public class PF008_CancelOrder extends PFChangWrappers{
 		.clickKeeplooking()
 		.clickStreetfare1()
 		.enterQuantity(Xtra1)
+		.clickyouroption()
 		.clickAddtoOrder()
 		.clickKeeplooking()
 		.clickStreetfare4()

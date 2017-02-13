@@ -77,8 +77,9 @@ public class PFCreateAccount extends PFChangWrappers{
 		return new PFYourAccount();
 	}
 	
-	public PFCreateAccount clickCreateMyAccount() {
+	public PFCreateAccount clickCreateMyAccount() throws InterruptedException {
 		clickByXpath(prop.getProperty("Register.createaccount.XPath"));
+		Thread.sleep(2000);
 		return this;
 	}
 

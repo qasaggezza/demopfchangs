@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import pages.PFHomePage;
 import wrappers.PFChangWrappers;
 
-public class PFchangsReservation extends PFChangWrappers {
+public class PF0010_SuccessfulReservation extends PFChangWrappers {
 	@Test(dataProvider="fetchData")
 	public void login(String location, String date ,String time,String value, String fname,String lname,String mail,String phone) throws InterruptedException{
 		
@@ -40,7 +40,7 @@ public class PFchangsReservation extends PFChangWrappers {
 	
 	@BeforeClass
 	public void beforeClass(){
-		dataSheetName="PF004";
+		dataSheetName="PF0010";
 		browserName="chrome";
 		testCaseName="PFChangsReservation";
 		testDescription="make areservation as a guest user";

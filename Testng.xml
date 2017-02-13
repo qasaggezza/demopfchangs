@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="testcases.PF001_VerifyAlertMessage_FailureRegistration"/>
+      <class name="testcases.PF0010_SuccessfulReservation"/>
+      <class name="testcases.PF0011_SingleGiftCard"/>
+      <class name="testcases.PF0012_SuccessfulRegistration"/>
+      <class name="testcases.PF004_SuccessfulLogin"/>
+      <class name="testcases.PF008_CancelOrder"/>
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
