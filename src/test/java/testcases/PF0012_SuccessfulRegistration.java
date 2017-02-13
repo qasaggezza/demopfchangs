@@ -28,7 +28,7 @@ public class PF0012_SuccessfulRegistration extends PFChangWrappers{
 		.clickLogout()
 		.clickNotuser();
 
-		//system.out.println("success");
+		
 
 		
 			}
